@@ -10,7 +10,7 @@ module.exports = {
     './node_modules/react-native-gesture-handler/jestSetup.js',
   ],
   transformIgnorePatterns: [
-    'node_modules/(?!(react-native.*|@?react-navigation.*|@?react-navigation-stack)/)',
+    'node_modules/(?!(react-native.*|@?react-navigation.*|@?react-navigation-stack|@?react-native-community/?viewpager)/)',
   ],
   setupFilesAfterEnv: ['@testing-library/react-native/cleanup-after-each'],
   testPathIgnorePatterns: [...ignores],

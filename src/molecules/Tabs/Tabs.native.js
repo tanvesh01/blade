@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
+import ViewPagerAdapter from 'react-native-tab-view-viewpager-adapter';
 import { TabView } from 'react-native-tab-view';
 import { getIconNames } from '../../_helpers/icon';
 import isDefined from '../../_helpers/isDefined';
@@ -77,6 +78,11 @@ const Tabs = ({ children, defaultValue, value, onChange, gestureHandlerProps }) 
       if (typeof newIndex === 'number') {
         if (!isDefined(value)) {
           setIndex(newIndex);
+        } else {
+          //   setIndex(newIndex);
+          //   setTimeout(() => {
+          //     setIndex(getRouteIndexFromValue({ routes, value }));
+          //   }, 200);
         }
         if (onChange) onChange(getRouteValueFromIndex({ routes, index: newIndex }));
       }
@@ -89,6 +95,9 @@ const Tabs = ({ children, defaultValue, value, onChange, gestureHandlerProps }) 
       navigationState={{ index, routes }}
       renderScene={renderScene}
       renderTabBar={TabBar}
+      renderPager={(props) => {
+        return <ViewPagerAdapter {...props} />;
+      }}
       onIndexChange={onIndexChange}
       initialLayout={initialLayout}
       swipeEnabled={!disableSwipe}
