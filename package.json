@@ -36,10 +36,10 @@
   },
   "devDependencies": {
     "@babel/cli": "7.8.4",
-    "@babel/core": "7.9.0",
+    "@babel/core": "7.8.4",
     "@babel/preset-env": "7.9.0",
     "@babel/preset-react": "7.9.4",
-    "@babel/runtime": "7.10.2",
+    "@babel/runtime": "7.8.4",
     "@react-native-community/eslint-config": "0.0.5",
     "@rollup/plugin-commonjs": "11.0.2",
     "@rollup/plugin-json": "4.0.2",
@@ -76,7 +76,7 @@
     "husky": "4.2.3",
     "jest": "24.9.0",
     "lint-staged": "10.0.9",
-    "metro-react-native-babel-preset": "0.56.0",
+    "metro-react-native-babel-preset": "0.59.0",
     "prettier": "1.19.1",
     "prop-types": "15.7.2",
     "react": "16.13.1",
@@ -98,9 +98,9 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-native": "0.61.5",
+    "react-native": "0.63.2",
     "react-native-svg": "^12.1.0",
-    "styled-components": "^4.3.2"
+    "styled-components": "^5.0.1"
   },
   "husky": {
     "hooks": {
