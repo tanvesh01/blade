@@ -1,16 +1,11 @@
 {
-  "name": "blade",
+  "name": "blade-old",
   "private": "true",
   "author": "kamleshchandnani",
   "version": "0.0.1",
   "license": "MIT",
   "engines": {
     "node": ">=12.19.0"
-  },
-  "workspaces": {
-    "packages": [
-      "packages/**"
-    ]
   },
   "scripts": {
     "web": "npm run web:storybook",

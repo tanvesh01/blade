@@ -1,7 +1,8 @@
 const ignores = ['/node_modules/'];
 
 module.exports = {
-  roots: ['../packages/'],
+  rootDir: "./",
+  roots: ['./'],
   testPathIgnorePatterns: [...ignores, 'native.test'],
   collectCoverageFrom: ['../packages/**/*.web.{ts,tsx}'],
   coverageThreshold: {
