@@ -54,6 +54,7 @@ const icons = {
   trash: require('./Trash').default,
   uploadCloud: require('./UploadCloud').default,
   user: require('./User').default,
+  refetch: require('./Refetch').default,
   wiFiOff: require('./WiFiOff').default,
   wiFiOn: require('./WiFiOn').default,
 };
